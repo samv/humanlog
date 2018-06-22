@@ -133,7 +133,7 @@ func (h *JSONHandler) Prettify(skipUnchanged bool) []byte {
 	} else if h.Opts.LightBg {
 		msg = rgbterm.FgString(h.Message, 0, 0, 0)
 	} else {
-		msg = rgbterm.FgString(h.Message, 255, 255, 255)
+		msg = rgbterm.FgString(h.Message, 255, 140, 0)
 	}
 
 	lvl := strings.ToUpper(h.Level)[:imin(4, len(h.Level))]
